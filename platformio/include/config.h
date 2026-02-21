@@ -209,15 +209,15 @@
 //  8   9
 // if DISP_BW_V1 is used, 6,7,8,9 are not available
 #define POS_SUNRISE     0
-#define POS_SUNSET      1
-#define POS_WIND        2
-#define POS_HUMIDITY    3
-#define POS_UVI         4
-#define POS_PRESSURE    5
-#define POS_AIR_QULITY  6
-#define POS_VISIBILITY  7
-#define POS_INTEMP      8
-#define POS_INHUMIDITY  9
+#define POS_SUNSET      2
+// #define POS_WIND        2
+// #define POS_HUMIDITY    3
+// #define POS_UVI         4
+// #define POS_AIR_QULITY  5
+// #define POS_PRESSURE    6
+// #define POS_VISIBILITY  7
+#define POS_INTEMP      6
+#define POS_INHUMIDITY  8
 // #define POS_MOONRISE    2
 // #define POS_MOONSET     3
 // #define POS_MOONPHASE   4

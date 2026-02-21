@@ -1307,7 +1307,7 @@ int kelvin_to_plot_y(float kelvin, int tempBoundMin, float yPxPerUnit,
 void drawOutlookGraph(const owm_hourly_t *hourly, const owm_daily_t *daily,
                       tm timeInfo)
 {
-  const int xPos0 = 350;
+  const int xPos0 = 162 + 26 + 48; // 162px per column
   int xPos1 = DISP_WIDTH;
   const int yPos0 = 216;
   const int yPos1 = DISP_HEIGHT - 46;
