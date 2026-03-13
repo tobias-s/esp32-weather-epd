@@ -1550,10 +1550,9 @@ void drawOutlookGraph(const owm_hourly_t *hourly, const owm_daily_t *daily,
       tm *timeInfo = localtime(&ts);
       if ((timeInfo->tm_hour % OUTLOOK_VERTICAL_LINE_INTERVAL) == 0)
       {
-        // draw dotted line
-        for (int y = std::floor((y0_t + y1_t)/2) ; y <= yPos1 ; y += 3) {
-          display.drawPixel(xPos0 + (i * xInterval) , y, GxEPD_BLACK);
-        }
+        // draw line
+        int xPos = xPos0 + (i * xInterval);
+        display.drawLine(xPos, std::floor((y0_t + y1_t)/2), xPos, yPos1, GxEPD_BLACK);
       }
 #endif
 
