@@ -127,7 +127,7 @@ const unsigned long NTP_TIMEOUT = 20000; // ms
 // minutes past the hour. (range: [2-1440])
 // Note: The OpenWeatherMap model is updated every 10 minutes, so updating more
 //       frequently than that is unnessesary.
-const int SLEEP_DURATION = 30; // minutes
+const int SLEEP_DURATION = 60; // minutes
 // Bed Time Power Savings.
 // If BED_TIME == WAKE_TIME, then this battery saving feature will be disabled.
 // (range: [0-23])
@@ -156,7 +156,7 @@ const uint32_t WARN_BATTERY_VOLTAGE     = 3535; // (millivolts) ~20%
 const uint32_t LOW_BATTERY_VOLTAGE      = 3462; // (millivolts) ~10%
 const uint32_t VERY_LOW_BATTERY_VOLTAGE = 3442; // (millivolts)  ~8%
 const uint32_t CRIT_LOW_BATTERY_VOLTAGE = 3404; // (millivolts)  ~5%
-const unsigned long LOW_BATTERY_SLEEP_INTERVAL      = 30;  // (minutes)
+const unsigned long LOW_BATTERY_SLEEP_INTERVAL      = 60;  // (minutes)
 const unsigned long VERY_LOW_BATTERY_SLEEP_INTERVAL = 120; // (minutes)
 // Battery voltage calculations are based on a typical 3.7v LiPo.
 const uint32_t MAX_BATTERY_VOLTAGE = 4200; // (millivolts)
