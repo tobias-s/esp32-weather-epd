@@ -18,8 +18,12 @@
 #include <Arduino.h>
 #include "config.h"
 
+//
 // see local.template.h
-#include "local.h"
+//
+#include "local.gary.h"
+//#include "local.leingarten.h"
+
 // PINS
 // The configuration below is intended for use with the project's official 
 // wiring diagrams using the FireBeetle 2 ESP32-E microcontroller board.
